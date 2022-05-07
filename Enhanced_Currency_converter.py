@@ -194,7 +194,7 @@ currencies = [
 ]
 
 
-# Prints the contents of the Storage file.
+# Print the contents of the storage text file
 def displays_storage():
     storage_file = open("conversion storage.txt", "r+")
     print(storage_file.read())
