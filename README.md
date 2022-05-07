@@ -1,4 +1,4 @@
-# Script Title
+# Currency Converter
 A small python program that converts currency with live info from an API based application and performs the calculations based on the input and output currency values while calcuating within the application
 
 ### Prerequisites
