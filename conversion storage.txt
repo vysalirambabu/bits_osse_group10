@@ -4,3 +4,4 @@ Convert between global currencies
 Latest live exchange rates
 Currency rate calculator
 Calculate live currency, foreign exchange rates via Currency Converter
+Rates updated daily from Central Bank
