@@ -1,20 +1,20 @@
 # Script Title
-<!--Remove the below lines and add yours -->
 A small python program that converts currency with live info
 
 ### Prerequisites
-<!--Remove the below lines and add yours -->
 - requests
 - Python 3
 
 ### How to run the script
-<!--Remove the below lines and add yours -->
+- to run currency_converter
 > python cc.py
+- to run enhanced currency_converter
+> python Enhanced_Currency_converter.py
 
 ### Screenshot/GIF showing the sample use of the script
-<!--Remove the below lines and add yours -->
-![ ](https://github.com/vysalirambabu/bits_osse_group10/blob/main/output.png)
+![ ](https://github.com/vysalirambabu/currency_converter/blob/main/output.png)
 
-## *Author Name*
-<!--Remove the below lines and add yours -->
-(https://github.com/vysalirambabu/bits_osse_group10)
+## *Authors Name*
+(https://github.com/vysalirambabu/currency_converter)
+- Likith Kumar S - 2021mt93029
+- Rambabu Vysali - 2021mt93307
