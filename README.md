@@ -12,7 +12,7 @@ A small python program that converts currency with live info
 > python Enhanced_Currency_converter.py
 
 ### Screenshot/GIF showing the sample use of the script
-![sample output](https://github.com/vysalirambabu/currency_converter/blob/main/output.png?raw=true)
+![sample output](https://github.com/vysalirambabu/currency_converter/blob/main/sample-output-1.PNG?raw=true)
 
 ## *Authors Name*
 (https://github.com/vysalirambabu/currency_converter)
