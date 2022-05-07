@@ -18,3 +18,4 @@ A small python program that converts currency with live info
 (https://github.com/vysalirambabu/currency_converter)
 - Likith Kumar S - 2021mt93029
 - Rambabu Vysali - 2021mt93307
+- Krithika K     - 2021mt93004
