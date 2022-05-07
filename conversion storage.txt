@@ -6,3 +6,4 @@ Currency rate calculator
 Calculate live currency, foreign exchange rates via Currency Converter
 Rates updated daily from Central Bank
 Currency converter and exchange rate for Dollar, Pound, Euro and all other currencies
+Currency online at attractive currency exchange rates
