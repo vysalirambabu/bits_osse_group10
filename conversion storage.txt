@@ -2,3 +2,4 @@
 Get accurate and reliable rates
 Convert between global currencies
 Latest live exchange rates
+Currency rate calculator
