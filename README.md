@@ -19,3 +19,5 @@ A small python program that converts currency with live info
 - Likith Kumar S - 2021mt93029
 - Rambabu Vysali - 2021mt93307
 - Krithika K     - 2021mt93004
+- Soumyadeep Chakraborti - 2021MT93227
+- Asha Roy - 2021mt93132
