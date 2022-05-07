@@ -3,6 +3,9 @@ THis program is capable of converting from one currency to another as of today i
 It uses the api at fixer.io and then calculates the value of the currency in terms of the other as of today.
 """
 
+# https://github.com/chavarera/python-mini-projects/issues
+# https://medium.com/@cereblanco/setup-black-and-isort-in-vscode-514804590bf9
+# Source: https://fixer.io/quickstart
 # Imp read: https://stackoverflow.com/questions/3139879/how-do-i-get-currency-exchange-rates-via-an-api-such-as-google-finance
 
 
@@ -190,8 +193,7 @@ currencies = [
 
 
 # The below function calculates the actual conversion
-def convert():
-    """This method takes the amount and converts it to currency"""
+def function1():
     query = input(
         "Please specify the amount of currency to convert, from currency, to currency (with space in between).\nPress SHOW to see list of currencies available. \nPress Q to quit. \n"
     )
@@ -199,7 +201,7 @@ def convert():
         sys.exit()
     elif query == "SHOW":
         pprint(currencies)
-        convert()
+        function1()
     else:
         qty, fromC, toC = query.split(" ")
         fromC = fromC.upper()
@@ -209,9 +211,8 @@ def convert():
         print(f"{qty} of currency {fromC} amounts to {amount} of currency {toC} today")
 
 
-if __name__ == "__main__":
-    try:
-        convert()
-    except KeyError:
-        print("You seem to have inputted wrongly, retry!")
-        convert()
+try:
+    function1()
+except KeyError:
+    print("You seem to have inputted wrongly, retry!")
+    function1()
