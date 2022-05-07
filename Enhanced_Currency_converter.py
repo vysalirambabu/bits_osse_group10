@@ -231,8 +231,9 @@ def convert():
         print(f"{qty} of currency {fromC} amounts to {amount} of currency {toC} today")
         
 
-try:
-    convert()
-except KeyError:
-    print("You seem to have inputted wrongly, retry!")
-    convert()
+if __name__ == "__main__":
+    try:
+        convert()
+    except KeyError:
+        print("You seem to have inputted wrongly, retry!")
+        convert()
