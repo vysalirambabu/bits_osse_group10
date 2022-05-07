@@ -1,2 +1,3 @@
 10.0 of currency IDR amounts to 0.0 of currency USD today
 Get accurate and reliable rates
+Convert between global currencies
