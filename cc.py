@@ -191,6 +191,7 @@ currencies = [
 
 # The below function calculates the actual conversion
 def convert():
+    """This method takes the amount and converts it to currency"""
     query = input(
         "Please specify the amount of currency to convert, from currency, to currency (with space in between).\nPress SHOW to see list of currencies available. \nPress Q to quit. \n"
     )
@@ -208,8 +209,9 @@ def convert():
         print(f"{qty} of currency {fromC} amounts to {amount} of currency {toC} today")
 
 
-try:
-    convert()
-except KeyError:
-    print("You seem to have inputted wrongly, retry!")
-    convert()
+if __name__ == "__main__":
+    try:
+        convert()
+    except KeyError:
+        print("You seem to have inputted wrongly, retry!")
+        convert()
