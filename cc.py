@@ -190,7 +190,7 @@ currencies = [
 
 
 # The below function calculates the actual conversion
-def function1():
+def convert():
     query = input(
         "Please specify the amount of currency to convert, from currency, to currency (with space in between).\nPress SHOW to see list of currencies available. \nPress Q to quit. \n"
     )
@@ -198,7 +198,7 @@ def function1():
         sys.exit()
     elif query == "SHOW":
         pprint(currencies)
-        function1()
+        convert()
     else:
         qty, fromC, toC = query.split(" ")
         fromC = fromC.upper()
@@ -209,7 +209,7 @@ def function1():
 
 
 try:
-    function1()
+    convert()
 except KeyError:
     print("You seem to have inputted wrongly, retry!")
-    function1()
+    convert()
