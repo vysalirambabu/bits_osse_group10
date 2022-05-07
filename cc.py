@@ -1,5 +1,5 @@
 """ 
-THis program is capable of converting from one currency to another as of today itself. 
+This program is capable of converting from one currency to another as of today itself. 
 It uses the api at fixer.io and then calculates the value of the currency in terms of the other as of today.
 """
 
@@ -168,7 +168,7 @@ currencies = [
     "UAH : Ukrainian Hryvnia,Ukraine Hryvnia",
     "UGX : Ugandan Shilling,Uganda Shilling",
     "USD : US Dollar,United States Dollar,America,American Samoa,American Virgin Islands,British Indian Ocean Territory,British Virgin Islands,Ecuador,El Salvador,Guam,Haiti,Micronesia,Northern Mariana Islands,Palau,Panama,Puerto Rico,Turks and Caicos Islands,United States Minor Outlying Islands,Wake Island,East Timor",
-    "UYU : Uruguayan Peso,Uruguay Peso",
+    "UYU : Uruguayan Peso,Uruguay Peso,Dinero de Uruguay",
     "UZS : Uzbekistani Som,Uzbekistan Som",
     "VEF : Venezuelan Bol&#237;var,Venezuela Bol&#237;var",
     "VND : Vietnamese Dong,Viet Nam Dong",
@@ -209,8 +209,9 @@ def convert():
         print(f"{qty} of currency {fromC} amounts to {amount} of currency {toC} today")
 
 
-try:
-    convert()
-except KeyError:
-    print("You seem to have inputted wrongly, retry!")
-    convert()
+if __name__ == "__main__":
+    try:
+        convert()
+    except KeyError:
+        print("You seem to have input incorrect value,kindly retry!")
+        convert()

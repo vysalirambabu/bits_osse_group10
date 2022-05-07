@@ -1,5 +1,5 @@
-# Script Title
-A small python program that converts currency with live info
+# Currency Converter
+A small python program that converts currency with live info from an API based application and performs the calculations based on the input and output currency values while calcuating within the application
 
 ### Prerequisites
 - requests
@@ -12,11 +12,12 @@ A small python program that converts currency with live info
 > python Enhanced_Currency_converter.py
 
 ### Screenshot/GIF showing the sample use of the script
-![ ](https://github.com/vysalirambabu/currency_converter/blob/main/output.png)
+![sample output](https://github.com/vysalirambabu/currency_converter/blob/main/sample-output-1.PNG?raw=true)
 
 ## *Authors Name*
 (https://github.com/vysalirambabu/currency_converter)
 - Likith Kumar S - 2021mt93029
 - Rambabu Vysali - 2021mt93307
+- Krithika K     - 2021mt93004
 - Soumyadeep Chakraborti - 2021MT93227
 - Asha Roy - 2021mt93132
