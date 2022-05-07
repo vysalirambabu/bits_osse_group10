@@ -194,15 +194,15 @@ currencies = [
 ]
 
 
-# enhancement 3
+# Print the contents of the storage text file
 def displays_storage():
-    file2 = open("conversion storage.txt", "r+")
-    print(file2.read())
-    file2.close()
+    storage_file = open("conversion storage.txt", "r+")
+    print(storage_file.read())
+    storage_file.close()
 
 
 # The below function calculates the actual conversion
-def function1():
+def convert():
     query = input(
         "Please specify the amount of currency to convert, from currency, to currency (with space in between).\nPress "
         "SHOW to see list of currencies available. \n press DISPLAY to see previous transactions"
@@ -211,10 +211,10 @@ def function1():
         sys.exit()
     elif query == "SHOW":
         pprint(currencies)
-        function1()
+        convert()
     elif query == "DISPLAY":
         displays_storage()
-        function1()
+        convert()
 
     else:
         qty, fromC, toC = query.split(" ")
@@ -231,8 +231,9 @@ def function1():
         print(f"{qty} of currency {fromC} amounts to {amount} of currency {toC} today")
         
 
-try:
-    function1()
-except KeyError:
-    print("You seem to have inputted wrongly, retry!")
-    function1()
+if __name__ == "__main__":
+    try:
+        convert()
+    except KeyError:
+        print("You seem to have inputted wrongly, retry!")
+        convert()
