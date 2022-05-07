@@ -20,4 +20,4 @@ A small python program that converts currency with live info from an API based a
 - Rambabu Vysali - 2021mt93307
 - Krithika K     - 2021mt93004
 - Soumyadeep Chakraborti - 2021MT93227
-- Asha Roy - 2021mt93132
+- Asha Roy - 2021MT93132
