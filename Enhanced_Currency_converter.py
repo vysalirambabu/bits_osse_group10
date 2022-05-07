@@ -11,7 +11,7 @@ import json
 import sys
 from pprint import pprint
 
-# The below 4 lines bring out the value of currency from the api at fixer.io.  I had to register there, the key is unique to me.
+# The below 4 lines bring out the value of currency from the api at fixer.io.  Author had to register there, the key is unique to author.
 url = "http://data.fixer.io/api/latest?access_key=33ec7c73f8a4eb6b9b5b5f95118b2275"
 data = requests.get(url).text
 data2 = json.loads(data)  # brings whether request was successful,timestamp etc
@@ -223,11 +223,11 @@ def convert():
         qty = float(round(int(qty), 2))
         amount = round(qty * fx[toC] / fx[fromC], 2)
         # opening the file in append mode
-        file1 = open("conversion storage.txt", "a")
+        strfile1 = open("conversion storage.txt", "a")
         # storing the cash conversion data
-        file1.write(f"{qty} of currency {fromC} amounts to {amount} of currency {toC} today\n")
+        strfile1.write(f"{qty} of currency {fromC} amounts to {amount} of currency {toC} today\n")
         # closes file after use
-        file1.close()
+        strfile1.close()
         print(f"{qty} of currency {fromC} amounts to {amount} of currency {toC} today")
         
 
@@ -235,5 +235,5 @@ if __name__ == "__main__":
     try:
         convert()
     except KeyError:
-        print("You seem to have inputted wrongly, retry!")
+        print("You seem to have input incorrect value,kindly retry!")
         convert()
